@@ -68,7 +68,7 @@ def enregistrer_client():
     prenom = request.form['prenom']
 
     # Connexion à la base de données
-    conn = sqlite3.connect('database.db')
+    conn = sqlite3.connect('database.db') #Commit
     cursor = conn.cursor()
 
     # Exécution de la requête SQL pour insérer un nouveau client
